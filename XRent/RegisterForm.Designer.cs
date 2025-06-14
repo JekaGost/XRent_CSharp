@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.Username_Label = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.txtPassword = new System.Windows.Forms.Label();
-            this.txtConfirmPassword = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.labelPassword = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.Last_Label = new System.Windows.Forms.Label();
@@ -44,6 +42,8 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.FirstLabel = new System.Windows.Forms.Label();
             this.txtFirst = new System.Windows.Forms.TextBox();
+            this.txt_kvkk = new System.Windows.Forms.RichTextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Username_Label
@@ -52,9 +52,9 @@
             this.Username_Label.Location = new System.Drawing.Point(88, 86);
             this.Username_Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Username_Label.Name = "Username_Label";
-            this.Username_Label.Size = new System.Drawing.Size(88, 21);
+            this.Username_Label.Size = new System.Drawing.Size(103, 21);
             this.Username_Label.TabIndex = 0;
-            this.Username_Label.Text = "Username";
+            this.Username_Label.Text = "Kullanıcı Adı";
             this.Username_Label.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUsername
@@ -66,45 +66,16 @@
             this.txtUsername.TabIndex = 1;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
-            // maskedTextBox1
+            // labelPassword
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(88, 225);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(247, 27);
-            this.maskedTextBox1.TabIndex = 2;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.AutoSize = true;
-            this.txtPassword.Location = new System.Drawing.Point(88, 186);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(41, 21);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.Text = "Şifre";
-            this.txtPassword.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // txtConfirmPassword
-            // 
-            this.txtConfirmPassword.AutoSize = true;
-            this.txtConfirmPassword.Location = new System.Drawing.Point(88, 288);
-            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.txtConfirmPassword.Name = "txtConfirmPassword";
-            this.txtConfirmPassword.Size = new System.Drawing.Size(95, 21);
-            this.txtConfirmPassword.TabIndex = 4;
-            this.txtConfirmPassword.Text = "Şifre Tekrarı";
-            this.txtConfirmPassword.Click += new System.EventHandler(this.txtConfirmPassword_Click);
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(88, 336);
-            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(247, 27);
-            this.maskedTextBox2.TabIndex = 5;
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Location = new System.Drawing.Point(88, 186);
+            this.labelPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(41, 21);
+            this.labelPassword.TabIndex = 3;
+            this.labelPassword.Text = "Şifre";
+            this.labelPassword.Click += new System.EventHandler(this.label2_Click);
             // 
             // btnRegister
             // 
@@ -145,6 +116,7 @@
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(93, 27);
             this.txtSurname.TabIndex = 9;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
             // Email_Label
             // 
@@ -163,11 +135,12 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(247, 27);
             this.txtEmail.TabIndex = 11;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // PhoneNumber
             // 
             this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Location = new System.Drawing.Point(398, 288);
+            this.PhoneNumber.Location = new System.Drawing.Point(88, 291);
             this.PhoneNumber.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.PhoneNumber.Name = "PhoneNumber";
             this.PhoneNumber.Size = new System.Drawing.Size(143, 21);
@@ -176,11 +149,12 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(397, 336);
+            this.txtPhone.Location = new System.Drawing.Point(88, 330);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(5);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(247, 27);
             this.txtPhone.TabIndex = 13;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // FirstLabel
             // 
@@ -199,6 +173,27 @@
             this.txtFirst.Name = "txtFirst";
             this.txtFirst.Size = new System.Drawing.Size(93, 27);
             this.txtFirst.TabIndex = 15;
+            this.txtFirst.TextChanged += new System.EventHandler(this.txtFirst_TextChanged);
+            // 
+            // txt_kvkk
+            // 
+            this.txt_kvkk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_kvkk.Location = new System.Drawing.Point(397, 261);
+            this.txt_kvkk.Name = "txt_kvkk";
+            this.txt_kvkk.ReadOnly = true;
+            this.txt_kvkk.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.txt_kvkk.Size = new System.Drawing.Size(247, 96);
+            this.txt_kvkk.TabIndex = 16;
+            this.txt_kvkk.Text = "";
+            this.txt_kvkk.TextChanged += new System.EventHandler(this.txt_kvkk_TextChanged);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(88, 225);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(247, 27);
+            this.txtPassword.TabIndex = 17;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // RegisterForm
             // 
@@ -207,6 +202,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::XRent.Properties.Resources.login_background_4;
             this.ClientSize = new System.Drawing.Size(750, 550);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txt_kvkk);
             this.Controls.Add(this.txtFirst);
             this.Controls.Add(this.FirstLabel);
             this.Controls.Add(this.txtPhone);
@@ -217,20 +214,18 @@
             this.Controls.Add(this.Last_Label);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.txtConfirmPassword);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.Username_Label);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.MidnightBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "RegisterForm";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "XRent";
             this.Load += new System.EventHandler(this.RegisterForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -241,10 +236,7 @@
 
         private System.Windows.Forms.Label Username_Label;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.Label txtPassword;
-        private System.Windows.Forms.Label txtConfirmPassword;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label Last_Label;
@@ -255,5 +247,7 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label FirstLabel;
         private System.Windows.Forms.TextBox txtFirst;
+        private System.Windows.Forms.RichTextBox txt_kvkk;
+        private System.Windows.Forms.TextBox txtPassword;
     }
 }

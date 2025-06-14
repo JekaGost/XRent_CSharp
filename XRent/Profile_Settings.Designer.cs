@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile_Settings));
             this.FirstLabel = new System.Windows.Forms.Label();
             this.Last_Label = new System.Windows.Forms.Label();
             this.Email_Label = new System.Windows.Forms.Label();
             this.PhoneNumber = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.Label();
             this.Username_Label = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.txtFirst = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.Update_btn = new System.Windows.Forms.Button();
             this.geri_btn = new System.Windows.Forms.Button();
+            this.btnViewMyReservation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstLabel
@@ -88,45 +88,25 @@
             this.PhoneNumber.Text = "Telefon Numarası";
             this.PhoneNumber.Click += new System.EventHandler(this.PhoneNumber_Click);
             // 
-            // txtPassword
-            // 
-            this.txtPassword.AutoSize = true;
-            this.txtPassword.Location = new System.Drawing.Point(89, 221);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(41, 21);
-            this.txtPassword.TabIndex = 19;
-            this.txtPassword.Text = "Şifre";
-            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
-            // 
             // Username_Label
             // 
             this.Username_Label.AutoSize = true;
-            this.Username_Label.Location = new System.Drawing.Point(89, 154);
+            this.Username_Label.Location = new System.Drawing.Point(89, 75);
             this.Username_Label.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.Username_Label.Name = "Username_Label";
-            this.Username_Label.Size = new System.Drawing.Size(88, 21);
+            this.Username_Label.Size = new System.Drawing.Size(103, 21);
             this.Username_Label.TabIndex = 20;
-            this.Username_Label.Text = "Username";
+            this.Username_Label.Text = "Kullanıcı Adı";
             this.Username_Label.Click += new System.EventHandler(this.Username_Label_Click);
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(93, 180);
+            this.txtUsername.Location = new System.Drawing.Point(93, 101);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(247, 27);
             this.txtUsername.TabIndex = 21;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(93, 247);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(247, 27);
-            this.maskedTextBox1.TabIndex = 22;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // txtFirst
             // 
@@ -182,26 +162,37 @@
             this.geri_btn.Name = "geri_btn";
             this.geri_btn.Size = new System.Drawing.Size(125, 37);
             this.geri_btn.TabIndex = 28;
-            this.geri_btn.Text = "Geri";
+            this.geri_btn.Text = " Geri";
             this.geri_btn.UseVisualStyleBackColor = true;
             this.geri_btn.Click += new System.EventHandler(this.geri_btn_Click);
+            // 
+            // btnViewMyReservation
+            // 
+            this.btnViewMyReservation.Location = new System.Drawing.Point(93, 154);
+            this.btnViewMyReservation.Margin = new System.Windows.Forms.Padding(5);
+            this.btnViewMyReservation.Name = "btnViewMyReservation";
+            this.btnViewMyReservation.Size = new System.Drawing.Size(192, 120);
+            this.btnViewMyReservation.TabIndex = 29;
+            this.btnViewMyReservation.Text = "Rezerve Ettiğim Arabayı Göster";
+            this.btnViewMyReservation.UseVisualStyleBackColor = true;
+            this.btnViewMyReservation.Click += new System.EventHandler(this.btnViewMyReservation_Click);
             // 
             // Profile_Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::XRent.Properties.Resources.panel_background2;
             this.ClientSize = new System.Drawing.Size(735, 413);
+            this.Controls.Add(this.btnViewMyReservation);
             this.Controls.Add(this.geri_btn);
             this.Controls.Add(this.Update_btn);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.txtFirst);
-            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.Username_Label);
-            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.PhoneNumber);
             this.Controls.Add(this.Email_Label);
             this.Controls.Add(this.Last_Label);
@@ -209,10 +200,11 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.MidnightBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Profile_Settings";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Profil Ayarları";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "XRent";
             this.Load += new System.EventHandler(this.Profile_Settings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,15 +217,14 @@
         private System.Windows.Forms.Label Last_Label;
         private System.Windows.Forms.Label Email_Label;
         private System.Windows.Forms.Label PhoneNumber;
-        private System.Windows.Forms.Label txtPassword;
         private System.Windows.Forms.Label Username_Label;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.TextBox txtFirst;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button Update_btn;
         private System.Windows.Forms.Button geri_btn;
+        private System.Windows.Forms.Button btnViewMyReservation;
     }
 }

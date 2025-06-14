@@ -14,9 +14,13 @@ namespace XRent
 {
     public partial class LoginForm: Form
     {
+        private PasswordAnimator loginPasswordAnimator;
+
         public LoginForm()
         {
             InitializeComponent();
+            loginPasswordAnimator = new PasswordAnimator(this.txtPassword);
+            this.FormClosed += (s, args) => loginPasswordAnimator?.Dispose();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -37,11 +41,11 @@ namespace XRent
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string username = txtUsername.Text;
-            string password = txtPassword.Text.Trim();
+            string password = loginPasswordAnimator.RealPassword;
 
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Please enter both username and password.");
+                MessageBox.Show(this, "Lütfen kullanıcı adınızı ve şifrenizi girdiniz.");
                 return;
             }
 
@@ -50,7 +54,6 @@ namespace XRent
                 conn.Open();
                 var cmd = new MySqlCommand("SELECT password FROM users WHERE username = @username", conn);
                 cmd.Parameters.AddWithValue("@username", username);
-                cmd.Parameters.AddWithValue("Password", password);
 
 
                 var result = cmd.ExecuteScalar();
@@ -59,31 +62,28 @@ namespace XRent
                 {
                     string hashedPassword = result.ToString();
 
-                    // Сравнение хеша
                     if (BCrypt.Net.BCrypt.Verify(password, hashedPassword))
                     {
-                        Console.WriteLine("LOGIN HASH: " + hashedPassword);
-                        MessageBox.Show("Login successful!");
+                        MessageBox.Show(this, "Giriş başarıyla gerçekleştirildi!");
+                        Session.Username = username;
                         this.DialogResult = DialogResult.OK;
+
+
                         this.Close();
-                        // тут можно открыть главное окно или что-то ещё
+
                     }
                     else
                     {
-                        Console.WriteLine("LOGIN HASH: " + hashedPassword);
 
-                        Console.WriteLine("LOGIN password from textbox: >" + password + "<");
-                        Console.WriteLine("LOGIN hashed from db:        >" + hashedPassword + "<");
 
                         bool isValid = BCrypt.Net.BCrypt.Verify(password, hashedPassword);
-                        Console.WriteLine("BCrypt.Verify result: " + isValid);
 
-                        MessageBox.Show("Invalid password.");
+                        MessageBox.Show(this, "Geçersiz şifre.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("User not found.");
+                    MessageBox.Show(this, "Kullanıcı bulunamadı.");
                 }
             }
         }

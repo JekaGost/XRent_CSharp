@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\inzo\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -102,12 +117,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddNewCarDetailsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCarDetailsDialog.Designer.cs">
+      <DependentUpon>AddNewCarDetailsDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppNavigator.cs" />
     <Compile Include="Araba.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,19 +142,32 @@
     <Compile Include="Arabalar_Listesi.Designer.cs">
       <DependentUpon>Arabalar_Listesi.cs</DependentUpon>
     </Compile>
-    <Compile Include="DashboardForm.cs">
+    <Compile Include="Car_Manager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashboardForm.Designer.cs">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
+    <Compile Include="Car_Manager.Designer.cs">
+      <DependentUpon>Car_Manager.cs</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gallery.Designer.cs">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kurallar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kurallar.Designer.cs">
       <DependentUpon>Kurallar.cs</DependentUpon>
     </Compile>
+    <Compile Include="KVKK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KVKK.Designer.cs">
+      <DependentUpon>KVKK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListItem.cs" />
     <Compile Include="Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +180,7 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PasswordAnimator.cs" />
     <Compile Include="Profile_Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +188,7 @@
       <DependentUpon>Profile_Settings.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
@@ -159,13 +196,28 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="Session.cs" />
     <Compile Include="User_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User_Menu.Designer.cs">
       <DependentUpon>User_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="User_Profile_As_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Profile_As_Admin.Designer.cs">
+      <DependentUpon>User_Profile_As_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Search.Designer.cs">
+      <DependentUpon>User_Search.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewCarDetailsDialog.resx">
+      <DependentUpon>AddNewCarDetailsDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,11 +227,17 @@
     <EmbeddedResource Include="Arabalar_Listesi.resx">
       <DependentUpon>Arabalar_Listesi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DashboardForm.resx">
-      <DependentUpon>DashboardForm.cs</DependentUpon>
+    <EmbeddedResource Include="Car_Manager.resx">
+      <DependentUpon>Car_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gallery.resx">
+      <DependentUpon>Gallery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kurallar.resx">
       <DependentUpon>Kurallar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KVKK.resx">
+      <DependentUpon>KVKK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
@@ -205,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User_Menu.resx">
       <DependentUpon>User_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Profile_As_Admin.resx">
+      <DependentUpon>User_Profile_As_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Search.resx">
+      <DependentUpon>User_Search.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -240,6 +304,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login_background_4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveicon1.png" />
+    <None Include="Resources\saveicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

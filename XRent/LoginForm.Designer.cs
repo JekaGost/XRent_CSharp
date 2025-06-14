@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,9 +51,9 @@
             this.label1.Location = new System.Drawing.Point(5, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.Size = new System.Drawing.Size(103, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
+            this.label1.Text = "Kullanıcı Adı";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUsername
@@ -100,9 +101,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
+            this.panel1.BackgroundImage = global::XRent.Properties.Resources.login_background_4;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtUsername);
-            this.panel1.Location = new System.Drawing.Point(120, 57);
+            this.panel1.Location = new System.Drawing.Point(120, 26);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 84);
@@ -112,9 +114,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LightCoral;
+            this.panel2.BackgroundImage = global::XRent.Properties.Resources.login_background_4;
             this.panel2.Controls.Add(this.txtPassword);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(120, 151);
+            this.panel2.Location = new System.Drawing.Point(120, 120);
             this.panel2.Margin = new System.Windows.Forms.Padding(5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(333, 84);
@@ -132,10 +135,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel3.BackgroundImage = global::XRent.Properties.Resources.login_background_4;
             this.panel3.Controls.Add(this.btnCancel);
             this.panel3.Controls.Add(this.btnLogin);
             this.panel3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.Location = new System.Drawing.Point(120, 279);
+            this.panel3.Location = new System.Drawing.Point(120, 274);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(333, 99);
@@ -144,9 +148,11 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackgroundImage = global::XRent.Properties.Resources.login_background_4;
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel3);
             this.panel4.Controls.Add(this.panel2);
+            this.panel4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Margin = new System.Windows.Forms.Padding(5);
             this.panel4.Name = "panel4";
@@ -164,11 +170,12 @@
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ForeColor = System.Drawing.Color.MidnightBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "LoginForm";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Giriş Yap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "XRent";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

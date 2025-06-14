@@ -118,14 +118,41 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="login_background_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_background_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="panel_background2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="panel_background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_background1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login_background_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_background_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login_background_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_hover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login_background_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login_background_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="panel_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\panel_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +160,106 @@
   <data name="login_background_3.jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login_background_3.jpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login_background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_background_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login_background_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login_background_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KurallarText_TR" xml:space="preserve">
+    <value>REZERVASYON KURALLARI
+
+XRent uygulamasını kullanarak yapacağınız tüm araç rezervasyonları aşağıda belirtilen kurallara tabidir. Kullanıcı, rezervasyon yaparak bu kuralları kabul etmiş sayılır.
+
+Madde 1: Genel Koşullar
+1.1. Aracı kiralayacak sürücünün en az 21 yaşında olması ve en az 2 yıllık geçerli bir sürücü belgesine sahip olması gerekmektedir.
+1.2. Rezervasyon sırasında verilen bilgilerin doğruluğu kullanıcının sorumluluğundadır.
+
+Madde 2: Rezervasyon ve Ödeme
+2.1. Rezervasyonlar yalnızca XRent uygulaması üzerinden yapılır.
+2.2. Rezervasyonun kesinleşmesi için ödeme işleminin başarıyla tamamlanması ve tarafınıza bir onay bildirimi gönderilmesi gerekmektedir.
+2.3. Kiralama ücretine ek olarak, araç grubuna göre değişiklik gösteren bir teminat bedeli (depozito) kredi kartınızdan provizyon olarak alınabilir.
+
+Madde 3: İptal ve Değişiklik
+3.1. Kiralamanın başlangıç saatine 48 saatten fazla bir süre kala yapılan iptallerde ücretin tamamı iade edilir.
+3.2. Kiralamanın başlangıcına 48 saatten az bir süre kala yapılan iptallerde bir günlük kiralama bedeli kesinti yapılarak iade yapılır.
+3.3. Rezervasyon saatinde aracın teslim alınmaması (no-show) durumunda ücret iadesi yapılmaz.
+3.4. Rezervasyon değişiklik talepleri, araç müsaitliğine bağlı olarak değerlendirilir.
+
+Madde 4: Araç Teslim Alma ve İade
+4.1. Araç teslimi sırasında geçerli sürücü belgesi ve kimlik kartının ibraz edilmesi zorunludur.
+4.2. Kullanıcı, aracı teslim almadan önce mevcut hasarları kontrol etmek ve yetkiliye bildirmekle yükümlüdür.
+4.3. Araç, sözleşmede belirtilen iade tarihinde, saatinde ve lokasyonunda iade edilmelidir. Geç iadelerde ek ücret uygulanır.
+4.4. Araç, teslim alındığı yakıt seviyesiyle iade edilmelidir. Eksik yakıt, güncel pompa fiyatı üzerinden hizmet bedeli eklenerek ücretlendirilir.
+
+Madde 5: Kullanım Koşulları
+5.1. Kiralanan aracın yarış, ralli, arazi sürüşü gibi amaçlarla kullanılması, yasa dışı mal taşımacılığında kullanılması, başka bir aracı çekmesi veya itmesi yasaktır.
+5.2. Aracın alkol veya uyuşturucu madde etkisi altında kullanılması kesinlikle yasaktır ve tüm sigorta geçerliliğini ortadan kaldırır.
+5.3. Araç, yalnızca rezervasyonu yapan ve sözleşmede adı geçen kişi tarafından kullanılabilir.
+
+Madde 6: Kaza, Hasar ve Sorumluluk
+6.1. Herhangi bir kaza durumunda, araç hareket ettirilmeden derhal polis veya jandarmaya haber verilmeli ve kaza raporu tutturulmalıdır. Aynı zamanda XRent müşteri hizmetleri bilgilendirilmelidir.
+6.2. Trafik cezaları, otoyol ve köprü geçiş ücretleri (HGS/OGS) kullanıcıya aittir.
+6.3. Aracın kullanıcı hatasından kaynaklanan (lastik yarılması, anahtar kaybı, yanlış yakıt dolumu vb.) tüm masrafları kullanıcıya aittir.
+
+XRent, belirtilen kurallarda değişiklik yapma hakkını saklı tutar.</value>
+  </data>
+  <data name="KVKK_Text_TR" xml:space="preserve">
+    <value>KVKK AYDINLATMA METNİ
+
+İşbu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK” veya “Kanun”) uyarınca, veri sorumlusu sıfatıyla XRent tarafından hazırlanmıştır.
+
+Madde 1: Veri Sorumlusu
+XRent olarak, kişisel verilerinizin güvenliğine büyük önem vermekteyiz. Bu kapsamda, kişisel verileriniz aşağıda açıklanan amaçlar doğrultusunda, hukuka ve dürüstlük kurallarına uygun bir şekilde işlenmektedir.
+
+Madde 2: İşlenen Kişisel Veriler ve İşlenme Amaçları
+Uygulamamıza kayıt olurken ve hizmetlerimizi kullanırken sizden topladığımız kişisel veriler şunlardır:
+- Kimlik Bilgileri: Ad, soyad.
+- İletişim Bilgileri: E-posta adresi, telefon numarası.
+- Kullanıcı Bilgileri: Kullanıcı adı, şifrelenmiş parola.
+- İşlem Güvenliği Bilgileri: Rezervasyon detayları (araç, tarih, saat), IP adresi, cihaz bilgileri.
+
+Bu veriler aşağıdaki amaçlarla işlenmektedir:
+a) Kullanıcı hesabınızın oluşturulması ve yönetilmesi.
+b) Araç kiralama ve rezervasyon işlemlerinizin gerçekleştirilmesi, teyit edilmesi ve yönetilmesi.
+c) Hizmetlerimizin sunulabilmesi için sizinle iletişim kurulması (onay, değişiklik, iptal ve bilgilendirme mesajları).
+ç) Finans ve muhasebe süreçlerinin yürütülmesi, faturalandırma işlemlerinin yapılması.
+d) Yasal yükümlülüklerimizin yerine getirilmesi ve yetkili kamu kurum ve kuruluşlarından gelen taleplerin yanıtlanması.
+e) Sunduğumuz hizmet kalitesini artırmak ve kullanıcı deneyimini iyileştirmek.
+
+Madde 3: Kişisel Verilerin Aktarılması
+Kişisel verileriniz, Kanun’un 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları çerçevesinde, yalnızca gerekli durumlarda ve sınırlı olmak kaydıyla aşağıdaki üçüncü taraflara aktarılabilecektir:
+- Ödeme işlemlerinin gerçekleştirilmesi amacıyla anlaşmalı olduğumuz ödeme hizmeti sağlayıcıları.
+- Hukuki uyuşmazlıkların giderilmesi veya ilgili mevzuat gereği talep halinde adli makamlar ve yetkili kamu kurum ve kuruluşları.
+
+Madde 4: Kişisel Veri Toplamanın Yöntemi ve Hukuki Sebebi
+Kişisel verileriniz, XRent uygulamasındaki kayıt formları, rezervasyon ekranları ve uygulamayı kullanımınız sırasında elektronik ortamda otomatik olarak toplanmaktadır. Verileriniz, “bir sözleşmenin kurulması veya ifasıyla doğrudan doğruya ilgili olması” ve “veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması” hukuki sebeplerine dayanılarak işlenmektedir.
+
+Madde 5: İlgili Kişinin Hakları (KVKK Madde 11)
+KVKK’nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:
+a) Kişisel verinizin işlenip işlenmediğini öğrenme,
+b) Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,
+c) Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+ç) Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,
+d) Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,
+e) KVKK’nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme,
+f) (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,
+g) İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme,
+ğ) Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini talep etme.
+
+Bu haklarınızı kullanmak için [destek@xrentapp.com] (buraya kendi e-posta adresini yaz) e-posta adresi üzerinden bizimle iletişime geçebilirsiniz.
+
+XRent, bu metinde yasal düzenlemelere paralel olarak değişiklik yapma hakkını saklı tutar.</value>
+  </data>
+  <data name="kvkk_Uyari" xml:space="preserve">
+    <value>Kayıt Ol butona bastığınızda, KVKK metnini okumuş ve onay verdiğinizi sayılıyor.
+
+KVKK metnini Giriş sayfa da bulabilirsiniz.</value>
   </data>
 </root>

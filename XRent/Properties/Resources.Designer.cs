@@ -63,6 +63,112 @@ namespace XRent.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_hover {
+            get {
+                object obj = ResourceManager.GetObject("close_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_hover1 {
+            get {
+                object obj = ResourceManager.GetObject("close_hover1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_normal {
+            get {
+                object obj = ResourceManager.GetObject("close_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_pressed {
+            get {
+                object obj = ResourceManager.GetObject("close_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_hover {
+            get {
+                object obj = ResourceManager.GetObject("home_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_normal {
+            get {
+                object obj = ResourceManager.GetObject("home_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на REZERVASYON KURALLARI
+        ///
+        ///XRent uygulamasını kullanarak yapacağınız tüm araç rezervasyonları aşağıda belirtilen kurallara tabidir. Kullanıcı, rezervasyon yaparak bu kuralları kabul etmiş sayılır.
+        ///
+        ///Madde 1: Genel Koşullar
+        ///1.1. Aracı kiralayacak sürücünün en az 21 yaşında olması ve en az 2 yıllık geçerli bir sürücü belgesine sahip olması gerekmektedir.
+        ///1.2. Rezervasyon sırasında verilen bilgilerin doğruluğu kullanıcının sorumluluğundadır.
+        ///
+        ///Madde 2: Rezervasyon ve Ödeme
+        ///2.1. Rezervasyonlar yalnızca XRent uygulama [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string KurallarText_TR {
+            get {
+                return ResourceManager.GetString("KurallarText_TR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на KVKK AYDINLATMA METNİ
+        ///
+        ///İşbu aydınlatma metni, 6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK” veya “Kanun”) uyarınca, veri sorumlusu sıfatıyla XRent tarafından hazırlanmıştır.
+        ///
+        ///Madde 1: Veri Sorumlusu
+        ///XRent olarak, kişisel verilerinizin güvenliğine büyük önem vermekteyiz. Bu kapsamda, kişisel verileriniz aşağıda açıklanan amaçlar doğrultusunda, hukuka ve dürüstlük kurallarına uygun bir şekilde işlenmektedir.
+        ///
+        ///Madde 2: İşlenen Kişisel Veriler ve İşlenme Amaçları
+        ///Uygulamamıza kayıt olurken ve h [остаток строки не уместился]&quot;;.
+        /// </summary>
+        internal static string KVKK_Text_TR {
+            get {
+                return ResourceManager.GetString("KVKK_Text_TR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kayıt Ol butona bastığınızda, KVKK metnini okumuş ve onay verdiğinizi sayılıyor.
+        ///
+        ///KVKK metnini Giriş sayfa da bulabilirsiniz..
+        /// </summary>
+        internal static string kvkk_Uyari {
+            get {
+                return ResourceManager.GetString("kvkk_Uyari", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_background_1 {
             get {
                 object obj = ResourceManager.GetObject("login_background_1", resourceCulture);
@@ -103,6 +209,36 @@ namespace XRent.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minimize_hover {
+            get {
+                object obj = ResourceManager.GetObject("minimize_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_normal {
+            get {
+                object obj = ResourceManager.GetObject("minimize_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_pressed {
+            get {
+                object obj = ResourceManager.GetObject("minimize_pressed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap panel_background {
             get {
                 object obj = ResourceManager.GetObject("panel_background", resourceCulture);
@@ -126,6 +262,26 @@ namespace XRent.Properties {
         internal static System.Drawing.Bitmap panel_background2 {
             get {
                 object obj = ResourceManager.GetObject("panel_background2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveicon {
+            get {
+                object obj = ResourceManager.GetObject("saveicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saveicon1 {
+            get {
+                object obj = ResourceManager.GetObject("saveicon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
